@@ -12,5 +12,7 @@ app.listen(process.env.PORT || 3001, function() {
   console.log("Server running on 3001");
 });
 
-app.use(basicAuth);
-app.use('/users', require('./users-controller'));
+
+app.use('/auth',require('./user-controller'));
+
+//app.use('/users', require('.));
